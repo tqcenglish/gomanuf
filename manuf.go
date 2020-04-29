@@ -32,7 +32,7 @@ func init() {
 
 	// rice 读取数据
 	// find a rice.Box
-	templateBox := rice.MustFindBox("./data")
+	templateBox := rice.MustFindBox("data")
 	// get file contents as string
 	manuf, err := templateBox.String("manuf")
 	if err != nil {
