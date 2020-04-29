@@ -32,11 +32,7 @@ func init() {
 
 	// rice 读取数据
 	// find a rice.Box
-	var err error
-	templateBox, err := rice.FindBox("./data")
-	if err != nil {
-		log.Errorf("findbox 读取数据失败 %+v", err)
-	}
+	templateBox := rice.MustFindBox("./data")
 	// get file contents as string
 	manuf, err := templateBox.String("manuf")
 	if err != nil {
