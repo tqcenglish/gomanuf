@@ -90,7 +90,7 @@ func Search(mac string) string {
 			return d[b].(map[uint64]string)[bIndex]
 		}
 	}
-	return "not found"
+	return ""
 }
 
 func readLine(fileName string, handler func(string)) error {
